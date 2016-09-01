@@ -9,7 +9,7 @@ public class Main {
         System.out.print("Hello");
         System.out.println(" World");
 
-/*        Connection con =
+        Connection con =
                 DriverManager.
                         getConnection(  "jdbc:"+
                                         "mysql:"+
@@ -21,6 +21,6 @@ public class Main {
         ResultSet rs = query.executeQuery("SELECT * FROM city");
         while( rs.next()) {
             System.out.println(rs.getString("Name"));
-        }*/
+        }
     }
 }
