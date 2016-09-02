@@ -14,11 +14,13 @@ public class Main {
                         getConnection(  "jdbc:"+
                                         "mysql:"+
                                         "//localhost/"+
-                                        "world" ,
+                                        //"world" ,
+                                        "mydbtest",
                                 "root" ,
                                 "root");
         Statement query = con.createStatement();
-        ResultSet rs = query.executeQuery("SELECT * FROM city");
+        //ResultSet rs = query.executeQuery("SELECT * FROM city");
+        ResultSet rs = query.executeQuery("SELECT * FROM users");
         while( rs.next()) {
             System.out.println(rs.getString("Name"));
         }
